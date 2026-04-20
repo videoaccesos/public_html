@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Servicios — Video Accesos</title>
+<meta name="description" content="Servicios: venta de tarjetas de acceso, Servicio Guardián, Kit Vecino Seguro y portal Mi Residencial." />
+<link rel="icon" href="assets/img/logo.png" type="image/png" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT:'#0040FF', dark:'#0030CC', light:'#E6EEFF' } } } } }
+</script>
+<link rel="stylesheet" href="assets/css/custom.css" />
+</head>
+<body class="bg-white text-slate-900">
+
+<header id="site-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100 transition-shadow">
+  <div class="container mx-auto max-w-7xl px-4 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2"><img src="assets/img/logo.png" alt="Video Accesos" class="h-9 w-auto" /></a>
+    <nav class="hidden md:flex items-center gap-7">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="nosotros.html" class="nav-link">Nosotros</a>
+      <a href="productos.html" class="nav-link">Productos</a>
+      <a href="servicios.html" class="nav-link active">Servicios</a>
+      <a href="contacto.php" class="nav-link">Contacto</a>
+      <a href="contacto.php" class="btn-brand px-4 py-2 rounded-lg text-sm font-semibold">Cotizar</a>
+    </nav>
+    <button id="menu-toggle" class="md:hidden p-2" aria-label="Abrir menú" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden border-t border-slate-100">
+    <div class="px-4 py-3 space-y-2">
+      <a href="index.html" class="block py-2">Inicio</a>
+      <a href="nosotros.html" class="block py-2">Nosotros</a>
+      <a href="productos.html" class="block py-2">Productos</a>
+      <a href="servicios.html" class="block py-2">Servicios</a>
+      <a href="contacto.php" class="block py-2">Contacto</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="min-height:320px">
+  <div class="hero-bg" style="background-image:url('assets/img/hero-vecino.jpg')"></div>
+  <div class="container mx-auto max-w-7xl px-4">
+    <p class="uppercase tracking-widest text-sm text-white/80 mb-2">Servicios</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold">Operación continua, tranquilidad diaria</h1>
+    <p class="mt-4 text-lg text-white/90 max-w-2xl">Nos encargamos del día a día de la seguridad de tu residencial para que tú te enfoques en lo importante.</p>
+  </div>
+</section>
+
+<section class="border-b border-slate-100 bg-white/70 backdrop-blur sticky top-16 z-40">
+  <div class="container mx-auto max-w-7xl px-4 py-3 flex flex-wrap gap-4 text-sm font-medium text-slate-600">
+    <a href="#venta-tarjetas" class="hover:text-brand">Venta de Tarjetas</a>
+    <a href="#guardian" class="hover:text-brand">Servicio Guardián</a>
+    <a href="#kit-vecino" class="hover:text-brand">Kit Vecino Seguro</a>
+    <a href="#mi-residencial" class="hover:text-brand">Mi Residencial</a>
+  </div>
+</section>
+
+<!-- Venta de Tarjetas -->
+<section id="venta-tarjetas" class="anchor py-20">
+  <div class="container mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+    <img src="assets/img/servicios/venta-tarjetas.jpg" alt="Venta de tarjetas" class="rounded-xl shadow-lg w-full aspect-[4/3] object-cover bg-slate-100" loading="lazy" />
+    <div>
+      <p class="text-brand font-semibold uppercase tracking-wider text-sm">Servicio 01</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-2">Solicitud y Venta de Tarjetas de Acceso</h2>
+      <p class="mt-4 text-slate-600">Tramita tus tarjetas nuevas o reposiciones sin salir de casa. Entrega directa, pago flexible y atención personalizada para residentes y administradores.</p>
+      <ul class="mt-6 space-y-2 text-slate-700">
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Tarjetas nuevas para residentes</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Reposición por pérdida o daño</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Múltiples formas de pago</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Entrega a domicilio</li>
+      </ul>
+      <a href="contacto.php" class="inline-block mt-8 btn-brand px-6 py-3 rounded-lg font-semibold">Solicitar tarjeta</a>
+    </div>
+  </div>
+</section>
+
+<!-- Servicio Guardián -->
+<section id="guardian" class="anchor py-20 bg-slate-50">
+  <div class="container mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div class="md:order-2">
+      <img src="assets/img/servicios/guardian.png" alt="Servicio Guardián" class="rounded-xl shadow-lg w-full aspect-[4/3] object-contain bg-white p-6" loading="lazy" />
+    </div>
+    <div class="md:order-1">
+      <p class="text-brand font-semibold uppercase tracking-wider text-sm">Servicio 02</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-2">Servicio Guardián</h2>
+      <p class="mt-4 text-slate-600">Sistema de recepción remota para accesos residenciales. Automatiza la apertura de portones y plumas para visitantes, proveedores y residentes, sin necesidad de personal físico en caseta.</p>
+      <ul class="mt-6 space-y-2 text-slate-700">
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Video llamada con operadora remota</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Registro fotográfico y de identificación</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Integración con tarjetas y sensores</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Reducción significativa del costo de vigilancia</li>
+      </ul>
+      <a href="contacto.php" class="inline-block mt-8 btn-brand px-6 py-3 rounded-lg font-semibold">Conocer Guardián</a>
+    </div>
+  </div>
+</section>
+
+<!-- Kit Vecino Seguro -->
+<section id="kit-vecino" class="anchor py-20">
+  <div class="container mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+    <img src="assets/img/servicios/kit-vecino.jpg" alt="Kit Vecino Seguro" class="rounded-xl shadow-lg w-full aspect-[4/3] object-cover" loading="lazy" />
+    <div>
+      <p class="text-brand font-semibold uppercase tracking-wider text-sm">Servicio 03</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-2">Kit Vecino Seguro</h2>
+      <p class="mt-4 text-slate-600">Kit portátil de cámaras IP megapixel para vigilancia de áreas públicas con almacenamiento en la nube. Incluye equipos, un año de almacenamiento y mantenimiento. Opcionalmente contrata análisis de video por horas.</p>
+      <ul class="mt-6 space-y-2 text-slate-700">
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Cámaras IP megapixel portátiles</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Un año de almacenamiento en la nube</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Mantenimiento incluido</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Servicio opcional de video analizado</li>
+      </ul>
+      <a href="contacto.php" class="inline-block mt-8 btn-brand px-6 py-3 rounded-lg font-semibold">Solicitar Kit</a>
+    </div>
+  </div>
+</section>
+
+<!-- Mi Residencial -->
+<section id="mi-residencial" class="anchor py-20 bg-slate-50">
+  <div class="container mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div class="md:order-2">
+      <img src="assets/img/servicios/mi-residencial.jpg" alt="Mi Residencial" class="rounded-xl shadow-lg w-full aspect-[4/3] object-cover" loading="lazy" />
+    </div>
+    <div class="md:order-1">
+      <p class="text-brand font-semibold uppercase tracking-wider text-sm">Servicio 04</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold mt-2">Portal Mi Residencial</h2>
+      <p class="mt-4 text-slate-600">Acceso a toda la información de tu residencial: registro de visitantes, tarjetas activas, reportes, incidentes y video en vivo del acceso principal. Requiere autorización del comité de la privada.</p>
+      <ul class="mt-6 space-y-2 text-slate-700">
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Bitácora de visitantes en tiempo real</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Gestión de tarjetas y permisos</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Reportes de incidencias</li>
+        <li class="flex items-start gap-2"><span class="text-brand">✓</span> Video en vivo del acceso</li>
+      </ul>
+      <a href="contacto.php" class="inline-block mt-8 btn-brand px-6 py-3 rounded-lg font-semibold">Solicitar acceso</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-slate-900 text-slate-300">
+  <div class="container mx-auto max-w-7xl px-4 py-14 grid md:grid-cols-4 gap-10">
+    <div class="md:col-span-2">
+      <img src="assets/img/logo.png" alt="Video Accesos" class="h-10 w-auto bg-white/5 p-1 rounded" />
+      <p class="mt-4 text-sm leading-relaxed max-w-md">Empresa innovadora especializada en soluciones de seguridad electrónica, control de acceso y monitoreo residencial. Con sede en Culiacán, Sinaloa.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-4">Navegación</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="nosotros.html" class="hover:text-white">Nosotros</a></li>
+        <li><a href="productos.html" class="hover:text-white">Productos</a></li>
+        <li><a href="servicios.html" class="hover:text-white">Servicios</a></li>
+        <li><a href="contacto.php" class="hover:text-white">Contacto</a></li>
+        <li><a href="aviso.html" class="hover:text-white">Aviso de Privacidad</a></li>
+        <li><a href="terminos.html" class="hover:text-white">Términos y Condiciones</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold mb-4">Contacto</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Blvd. Zapata 543 Pte., Local 5</li>
+        <li>Col. Almada, C.P. 80200</li>
+        <li>Culiacán, Sinaloa</li>
+        <li class="pt-2">+52 667 712 60 43</li>
+        <li>+52 667 712 60 45</li>
+        <li><a href="mailto:atencionaclientes@videoaccesos.com" class="hover:text-white">atencionaclientes@videoaccesos.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-800">
+    <div class="container mx-auto max-w-7xl px-4 py-5 text-sm text-slate-400 flex flex-col md:flex-row justify-between gap-2">
+      <p>&copy; <span id="y"></span> Video Accesos. Todos los derechos reservados.</p>
+      <p>Culiacán, Sinaloa · México</p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
