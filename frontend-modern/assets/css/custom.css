@@ -137,7 +137,7 @@ body {
 
 /* Section anchor offset so links don't hide under sticky header */
 .anchor {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 140px;
 }
 
 @media (max-width: 768px) {
