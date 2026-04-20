@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (preg_match("/[\r\n]/", $nombre . $email . $asunto)) {
         $error = 'Entrada inválida.';
     } else {
-        $para = 'atencionaclientes@videoaccesos.com';
+        $para = 'contacto@videoaccesos.net';
         $subject = $asunto !== '' ? "[Contacto Web] $asunto" : '[Contacto Web] Nuevo mensaje';
         $body = "Nombre: $nombre\nCorreo: $email\nAsunto: $asunto\n\nMensaje:\n$mensaje\n";
 
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $sent = true;
             $old = ['nombre' => '', 'email' => '', 'asunto' => '', 'mensaje' => ''];
         } else {
-            $error = 'No pudimos enviar tu mensaje. Intenta más tarde o escríbenos directamente a atencionaclientes@videoaccesos.com';
+            $error = 'No pudimos enviar tu mensaje. Intenta más tarde o escríbenos directamente a contacto@videoaccesos.net';
         }
     }
 }
@@ -47,7 +47,7 @@ function h($s) { return htmlspecialchars($s, ENT_QUOTES, 'UTF-8'); }
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Contacto — Video Accesos</title>
-<meta name="description" content="Ponte en contacto con Video Accesos. Oficina en Culiacán, Sinaloa. Atención telefónica y por correo." />
+<meta name="description" content="Ponte en contacto con Video Accesos. Oficina en Culiacán Rosales, Sinaloa. Atención telefónica y por correo." />
 <link rel="icon" href="assets/img/logo.png" type="image/png" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
@@ -99,23 +99,23 @@ tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT:'#0040FF', dar
     <div class="lg:col-span-1 space-y-8">
       <div>
         <h3 class="font-bold text-lg">Oficina</h3>
-        <p class="text-slate-600 mt-2">Blvd. Zapata 543 Pte., Local 5<br>Col. Almada, C.P. 80200<br>Culiacán, Sinaloa</p>
+        <p class="text-slate-600 mt-2">Av. Gral. Ramón Corona 122<br>Col. Miguel Alemán, C.P. 80200<br>Culiacán Rosales, Sinaloa</p>
       </div>
       <div>
         <h3 class="font-bold text-lg">Teléfonos</h3>
         <p class="text-slate-600 mt-2">
-          <a href="tel:+526677126043" class="hover:text-brand block">+52 667 712 60 43</a>
-          <a href="tel:+526677126045" class="hover:text-brand block">+52 667 712 60 45</a>
+          <a href="tel:+526679960606" class="hover:text-brand block">+52 667 996 0606</a>
+          <a href="tel:+526672639025" class="hover:text-brand block">+52 667 263 9025</a>
         </p>
       </div>
       <div>
         <h3 class="font-bold text-lg">Correo</h3>
         <p class="text-slate-600 mt-2">
-          <a href="mailto:atencionaclientes@videoaccesos.com" class="hover:text-brand break-all">atencionaclientes@videoaccesos.com</a>
+          <a href="mailto:contacto@videoaccesos.net" class="hover:text-brand break-all">contacto@videoaccesos.net</a>
         </p>
       </div>
       <div class="rounded-xl overflow-hidden border border-slate-200">
-        <iframe title="Ubicación Video Accesos" src="https://maps.google.com/maps?q=Blvd.%20Zapata%20543%20Pte.%20Culiacan&amp;z=15&amp;output=embed" class="w-full h-64" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Ubicación Video Accesos" src="https://maps.google.com/maps?q=Av.%20Gral.%20Ram%C3%B3n%20Corona%20122%2C%20Miguel%20Alem%C3%A1n%2C%20Culiac%C3%A1n%20Rosales%2C%20Sinaloa&amp;z=16&amp;output=embed" class="w-full h-64" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
@@ -174,8 +174,8 @@ tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT:'#0040FF', dar
 <footer class="bg-slate-900 text-slate-300">
   <div class="container mx-auto max-w-7xl px-4 py-14 grid md:grid-cols-4 gap-10">
     <div class="md:col-span-2">
-      <img src="assets/img/logo.png" alt="Video Accesos" class="h-10 w-auto bg-white/5 p-1 rounded" />
-      <p class="mt-4 text-sm leading-relaxed max-w-md">Empresa innovadora especializada en soluciones de seguridad electrónica, control de acceso y monitoreo residencial. Con sede en Culiacán, Sinaloa.</p>
+      <img src="assets/img/logo.png" alt="Video Accesos" class="h-10 w-auto bg-white p-2 rounded" />
+      <p class="mt-4 text-sm leading-relaxed max-w-md">Empresa innovadora especializada en soluciones de seguridad electrónica, control de acceso y monitoreo residencial. Con sede en Culiacán Rosales, Sinaloa.</p>
     </div>
     <div>
       <h4 class="text-white font-semibold mb-4">Navegación</h4>
@@ -191,19 +191,19 @@ tailwind.config = { theme: { extend: { colors: { brand: { DEFAULT:'#0040FF', dar
     <div>
       <h4 class="text-white font-semibold mb-4">Contacto</h4>
       <ul class="space-y-2 text-sm">
-        <li>Blvd. Zapata 543 Pte., Local 5</li>
-        <li>Col. Almada, C.P. 80200</li>
-        <li>Culiacán, Sinaloa</li>
-        <li class="pt-2">+52 667 712 60 43</li>
-        <li>+52 667 712 60 45</li>
-        <li><a href="mailto:atencionaclientes@videoaccesos.com" class="hover:text-white">atencionaclientes@videoaccesos.com</a></li>
+        <li>Av. Gral. Ramón Corona 122</li>
+        <li>Col. Miguel Alemán, C.P. 80200</li>
+        <li>Culiacán Rosales, Sinaloa</li>
+        <li class="pt-2">+52 667 996 0606</li>
+        <li>+52 667 263 9025</li>
+        <li><a href="mailto:contacto@videoaccesos.net" class="hover:text-white">contacto@videoaccesos.net</a></li>
       </ul>
     </div>
   </div>
   <div class="border-t border-slate-800">
     <div class="container mx-auto max-w-7xl px-4 py-5 text-sm text-slate-400 flex flex-col md:flex-row justify-between gap-2">
       <p>&copy; <span id="y"></span> Video Accesos. Todos los derechos reservados.</p>
-      <p>Culiacán, Sinaloa · México</p>
+      <p>Culiacán Rosales, Sinaloa · México</p>
     </div>
   </div>
 </footer>
