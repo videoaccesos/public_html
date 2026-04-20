@@ -1,0 +1,336 @@
+html
+{
+	background-color: #A9D0F5;
+  	height:100%;
+}
+
+table
+{
+	border:2px ;
+	width: 100%;
+	border-radius: 5px;
+}
+th, td 
+{
+	border:2px solid black;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 26px;
+}
+
+#divTabla
+{
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 2%;
+}
+
+#encabezadoTabla
+{
+	background-color: #58ACFA;
+	font-size: 30px;
+}
+
+#columnas
+{
+	background-color: #58ACFA;
+}
+
+tbody
+{
+	background-color: white;
+}
+#botonNuevo
+{
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-left: 90%;
+	margin-bottom: 1%;
+	background-color: #01A9DB ;
+	border: 3px solid #045FB4;
+	color: white;
+}
+#botonNuevo:hover
+{
+	background-color: white;
+	color: #045FB4;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding: 20px 20px 20px 30px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+  margin-bottom:1%;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 22px;
+	border-radius: 0;
+	line-height: 20px;
+	background-color: #fbfbfb;
+	color:#045FB4;
+	padding: 11px 11px 11px 52px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+  border:#045FB4 solid 3px;
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #045FB4;
+	color: #045FB4;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#045FB4;
+	border:#045FB4 solid 3px;
+}
+
+#FecNac{
+	background-image: url(images/fecha.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#FecNac:focus{
+	background-image: url(images/fecha.png);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+
+#Clave_Emp{
+	background-image: url(images/clave.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#Clave_Emp:focus{
+	background-image: url(images/clave.png);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#Nombre{
+	background-image: url(images/persona.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#Nombre:focus{
+	background-image: url(images/persona.png);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#ApPaterno{
+	background-image: url(images/persona.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#ApPaterno:focus{
+	background-image: url(images/persona.png);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#ApMaterno{
+	background-image: url(images/persona.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#ApMaterno:focus{
+	background-image: url(images/persona.png);
+	background-size: 30px 30px;
+ 	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#Departamento{
+	background-image: url(images/departamento.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#Departamento:focus{
+	background-image: url(images/departamento.png);
+	background-size: 30px 30px;
+ 	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+
+#Sueldo{
+	background-image: url(images/sueldo.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#Sueldo:focus{
+	background-image: url(images/sueldo.png);
+	background-size: 30px 30px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#botonGuardar:disabled
+{
+	background-color: red;
+}
+#botonGuardar:enabled
+{
+	background-color: #045FB4;
+}
+
+
+#botonGuardar{
+	font-family: 'Arial', Arial, Helvetica, sans-serif;
+	color:white;
+	float:left;
+	width: 40%;
+	cursor:pointer;
+	background-color: #045FB4;
+	color:white;
+	font-size:22px;
+	padding-top:5px;
+	padding-bottom:5px;
+  margin-top:5px;
+  margin-left: 5%;
+  font-weight:700;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 8px;
+}
+
+#botonGuardar:hover
+{
+	background-color: white;
+	color: #045FB4;
+	border: 3px solid #045FB4;
+}
+
+#botonEditar{
+	font-family: 'Arial', Arial, Helvetica, sans-serif;
+	color:white;
+	float:left;
+	width: 40%;
+	cursor:pointer;
+	background-color: #045FB4;
+	color:white;
+	font-size:22px;
+	padding-top:5px;
+	padding-bottom:5px;
+  margin-top:5px;
+  margin-left: 5%;
+  font-weight:700;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 8px;
+}
+#botonEditar:hover
+{
+	background-color: white;
+	color: #045FB4;
+	border: 3px solid #045FB4;
+}
+
+#botonCancelar{
+	font-family: 'Arial', Arial, Helvetica, sans-serif;
+	color:white;
+	float:left;
+	width: 40%;
+	cursor:pointer;
+	background-color: #045FB4;
+	color:white;
+	font-size:22px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-left: 5%;
+  margin-top:5px;
+  font-weight:700;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 8px;
+  position: absolute;
+}
+
+#botonCancelar:hover
+{
+	background-color: white;
+	color: #045FB4;
+	border: 3px solid #045FB4;
+}
+#formCancelar
+{
+	background-color: white;
+	margin-top: -3.5%;
+}
+
+h1{
+	font-family: 'Arial', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	text-align: center;
+	color:#045FB4;
+	font-size:40px;
+  margin-top:1%;
+  font-weight:700;
+}
+a
+{
+	font-family: 'Arial', Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color white;
+
+}
+.submit:hover {
+	color: #3498db;
+}

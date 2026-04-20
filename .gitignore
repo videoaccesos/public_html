@@ -1,0 +1,30 @@
+# Archivos grandes y logs
+*.log
+error_log
+serviciosAB/error_log
+debug.log
+access.log
+
+# Secretos y credenciales
+apiVision.json
+dlls/apiVision.json
+*.env
+config.php
+settings.php
+wp-config.php
+
+# Temporales y caché
+cache/
+tmp/
+temp/
+logs/
+backup/
+backups/
+
+# Dependencias
+vendor/
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db

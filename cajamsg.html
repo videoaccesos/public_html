@@ -1,0 +1,31 @@
+<!--
+                   Instituto Tecnologico de Zacatepec, Morelos
+Descripcion:    Formulario HTML para el envio de un correo en PHP.
+Author:         Gonzalo Silverio  gonzasilve@gmail.com
+Archivo:        cajamsg.html
+-->
+ 
+<FORM id="comentarios" name="comentarios" method="POST" action="enviar_correo.php" >
+<table bgcolor="#C2E5FF" border="1">
+<tr><td>
+    <table bgcolor="#C2E5FF"> 
+        <tr>
+        <td>Su nombre:</td><td><input type="text" id="nombr" name="nombr" value="" maxlength="90" size="30"><br></td>
+        </tr>
+        <tr>
+        <td>Su correo electronico:</td><td><input type="text" id="elcorreo" name="elcorreo" value="" maxlength="50"  size="30"><br></td>
+        </tr>
+        <tr>
+        <td>Asunto:</td><td><input type="text" id="asunt" name="asunt" maxlength="50"  size="30"><br></td>
+        </tr>
+        <tr>
+        <td>Su mensaje:<br><br> (Puede usar HTML) </td><td><textarea  rows="10" cols= "23" id="elmsg" name="elmsg" >Su comentario...</textarea><br></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="right"><input type="submit" value="Enviar Comentario" name="enviar"><br></td>
+        </tr>
+     
+    </table>
+</td></tr>
+</table>
+</FORM>

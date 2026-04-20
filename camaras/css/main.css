@@ -1,0 +1,155 @@
+@media screen and (max-width: 600px)
+{
+	img.jslghtbx-thmb
+	{
+		margin: 0 !important;
+		display: block !important;
+	}
+}
+
+@media screen and (min-width: 451px)
+{
+	.jslghtbx-thmb
+	{
+		margin: 0 !important;
+	}
+}
+
+.jslghtbx-thmb
+{
+	max-height: 100% !important;
+	box-shadow: 0px 0px 0px 0px #000 !important;
+}
+
+.imageHolder
+{
+	position: relative;
+	width: 285px;
+	height: 175px;
+
+	float: left;;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+		
+.imageHolder .caption
+{
+	opacity: 0.7;
+	position: absolute;
+	height:50px;
+	width: 283px;
+	bottom: 0px;
+	left: 0px;
+	padding: 2px 0px;
+	color: white;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	font-weight:bold;
+}
+    
+.imageHolder:hover .caption
+{
+	background: rgba(0,250,0,0.7);
+}
+
+.imageHolder > img
+{
+	width: 100%;
+	height: 100%;
+}
+
+html
+{
+	overflow: hidden !important;
+}
+
+body
+{
+	background: rgba(0,0,0,0.85);
+	color: white;
+	height: 100%;
+}
+
+.jslghtbx-contentwrapper > img.jslghtbx-animate-transition 
+{
+	width: 50% !important;
+	height: 30% !important;
+	margin-top: 5% !important;
+}
+
+.content
+{
+	float: right;
+	right: 0;
+	width: 75%;
+	height: 85%;
+	top: 0;
+
+	position: absolute;
+}
+
+.list
+{
+	top: 10px;
+	left: 0;
+	width: 25%;
+	height: 98%;
+	background-color: rgba(0,0,0, 0.5);
+
+	overflow: auto;
+	position: absolute;
+}
+
+.list button
+{
+	background-color: rgba(0,0,0, 0.8);
+	border: 1px solid black;
+	color: white;
+	padding: 10px 24px;
+	cursor: pointer;
+	width: 100%;
+	display: block;
+}
+
+.list button:not(:last-child)
+{
+	border-bottom: none;
+}
+
+.list button:hover
+{
+	background-color: #3e8e41;
+}
+
+.list .active
+{
+	background-color: #3e8e41;
+}
+
+.content .pagination
+{
+	bottom: 0;
+	margin-left: 50%;
+	position: absolute;
+
+	text-align: center;
+    line-height: 20px;
+    word-spacing: 4px;
+}
+
+.content .pagination a
+{
+	color: white;
+    text-decoration: none;
+}
+
+.content .pagination a:hover
+{
+	text-decoration: underline;
+}
+
+.content .pagination a.selected
+{
+	font-weight: bold;
+	text-decoration: underline;
+}

@@ -1,0 +1,118 @@
+<?php
+// Conexión a la base de datos
+$server     = 'localhost'; 
+$username   = 'wwwvideo_root'; 
+$password   = 'V1de0@cces0s'; 
+$database   = 'wwwvideo_video_accesos'; 
+
+$conexion = @new mysqli($server, $username, $password, $database);
+
+if ($conexion->connect_error) {
+    die('Error de conexión: ' . $conexion->connect_error);
+}
+
+// Consulta para obtener las privadas
+$sql = "SELECT privada_id, descripcion FROM privadas WHERE estatus_id = 1 ORDER BY descripcion";
+$result = $conexion->query($sql);
+
+// Verificación de resultados y generación del contenido de la cortinilla
+$combobit = "";
+if ($result->num_rows > 0) {
+    // Recorrer las privadas y generar las opciones del menú desplegable
+    while ($row = $result->fetch_assoc()) {
+        $combobit .= "<option value='".$row['privada_id']."'>".$row['descripcion']."</option>";
+    }
+} else {
+    $combobit = "<option value=''>No hay privadas disponibles</option>";
+}
+
+// Cerrar la conexión
+$conexion->close();
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte de Venta de Tarjetas</title>
+    <style>
+        body {
+            background-image: url('ticket/imagenes/bgFondo.jpg');
+            background-size: cover;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .form-container {
+            width: 320px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h3 {
+            text-align: center;
+            color: #0040FF;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="date"] {
+            background-size: 24px 24px;
+            background-position: 12px 4px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #0040FF;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .form-container select {
+            background: #fff url('ticket/imagenes/privada.png') 12px 4px no-repeat;
+            background-size: 26px 26px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <form name="consulta_reporte" method="POST" action="reporte_ventas.php" target="_blank">
+        <h3>Reporte de Venta de Tarjetas</h3>
+
+        <label for="fechaInicial">Fecha Inicial:</label>
+        <input type="date" id="fechaInicial" value="<?php echo date('Y-m-d'); ?>" name="fechaInicial" required>
+
+        <label for="fechaFinal">Fecha Final:</label>
+        <input type="date" id="fechaFinal" value="<?php echo date('Y-m-d'); ?>" name="fechaFinal" required>
+
+        <label for="cmbPrivadas">Privada:</label>
+        <select name="cmbPrivadas" id="cmbPrivadas" required>
+            <option value="0">Todas las Privadas</option>
+            <?php echo $combobit; ?>  <!-- Aquí se insertan las opciones generadas por la consulta SQL -->
+        </select>
+
+        <input type="submit" value="Generar Reporte">
+    </form>
+</div>
+
+</body>
+</html>
